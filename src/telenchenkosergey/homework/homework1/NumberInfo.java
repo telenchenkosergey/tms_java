@@ -1,5 +1,5 @@
 package telenchenkosergey.homework.homework1;
-//Задание 1
+//Р—Р°РґР°РЅРёРµ 1
 public class NumberInfo {
     public static void main(String[] args) {
         System.out.println(numberInfo(532));
@@ -7,18 +7,18 @@ public class NumberInfo {
 
     public static String numberInfo(int number) {
         if (number == 0) {
-            return "Число равно нулю";
+            return "Р§РёСЃР»Рѕ СЂР°РІРЅРѕ РЅСѓР»СЋ";
         } else {
             String stringNumber = Integer.toString(Math.abs(number));
             String[] arrayString = stringNumber.split("");
-            return "Число " + number + " " + positiveOrNegative(number) + " " + arrayString.length + "-значное";
+            return "Р§РёСЃР»Рѕ " + number + " " + positiveOrNegative(number) + " " + arrayString.length + "-Р·РЅР°С‡РЅРѕРµ";
         }
     }
-    // Определяем является ли число положительным или отрицательным
+    // РћРїСЂРµРґРµР»СЏРµРј СЏРІР»СЏРµС‚СЃСЏ Р»Рё С‡РёСЃР»Рѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рј РёР»Рё РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј
     public static String positiveOrNegative(int number) {
         if (number > 0) {
-            return "положительное";
+            return "РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ";
         }
-        return "отрицательное";
+        return "РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ";
     }
 }

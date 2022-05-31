@@ -1,5 +1,5 @@
 package telenchenkosergey.homework.homework1;
-// Задание 3
+// Р—Р°РґР°РЅРёРµ 3
 public class NumberOutput {
     public static void main(String[] args) {
         System.out.println(numberOutput(-10));

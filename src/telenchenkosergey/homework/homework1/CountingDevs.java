@@ -1,5 +1,5 @@
 package telenchenkosergey.homework.homework1;
-// Задание 7
+// Р—Р°РґР°РЅРёРµ 7
 public class CountingDevs {
     public static void main(String[] args) {
         System.out.println(countingDevs(101));
@@ -7,8 +7,8 @@ public class CountingDevs {
 
 
     public static String countingDevs(int count) {
-        return count + " программист" +
-                rightSuffix(count, "", "а", "ов");
+        return count + " РїСЂРѕРіСЂР°РјРјРёСЃС‚" +
+                rightSuffix(count, "", "Р°", "РѕРІ");
     }
 
     public static String rightSuffix(int count, String forOne, String forSeveral, String forMany) {
