@@ -1,5 +1,5 @@
 package telenchenkosergey.homework.homework1;
-//Задание 5
+//Р—Р°РґР°РЅРёРµ 5
 public class HowManyPositive {
     public static void main(String[] args) {
         System.out.println(howManyPositive(1, -6, 0));
@@ -13,6 +13,6 @@ public class HowManyPositive {
                 positive++;
             }
         }
-        return "Количество положительных чисел: " + positive;
+        return "РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… С‡РёСЃРµР»: " + positive;
     }
 }

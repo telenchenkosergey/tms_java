@@ -1,5 +1,5 @@
 package telenchenkosergey.homework.homework1;
-//Задание 6
+//Р—Р°РґР°РЅРёРµ 6
 public class BiggerNumber {
     public static void main(String[] args) {
         System.out.println(biggerNumber(3, 2));
