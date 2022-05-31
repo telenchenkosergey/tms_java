@@ -8,6 +8,7 @@ public class Task_1_4 {
         System.out.println("Enter a number: ");
         int number = input.nextInt();
         int sum = 0;
+        input.close();
 
         for (int i = 1; i <= number; i++) {
             sum += i;

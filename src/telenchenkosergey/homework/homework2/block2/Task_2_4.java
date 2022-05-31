@@ -10,6 +10,7 @@ public class Task_2_4 {
         int num = input.nextInt();
         System.out.println("Enter multiplicator: ");
         int multiplicator = input.nextInt();
+        input.close();
         int sum = 0;
 
         for (int i = 0; i < multiplicator; i++) {
