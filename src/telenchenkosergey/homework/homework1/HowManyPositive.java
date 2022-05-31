@@ -13,6 +13,6 @@ public class HowManyPositive {
                 positive++;
             }
         }
-        return "Количество положительных чисел: " + positive; //+ "\nКоличество отрицательных чисел: " + negative;
+        return "Количество положительных чисел: " + positive;
     }
 }
