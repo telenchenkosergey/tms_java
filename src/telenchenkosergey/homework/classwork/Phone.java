@@ -1,22 +1,16 @@
-package telenchenkosergey.homework.homework3.calculator;
+package telenchenkosergey.homework.classwork;
 
 public class Phone {
     private final String manufacturer;
     private final String model;
-    Calculator calc;
 
-    public Phone(String manufacturer, String model, Calculator calc) {
+    public Phone(String manufacturer, String model) {
         this.manufacturer = manufacturer;
         this.model = model;
-        this.calc = calc;
     }
 
     protected static String call(String number) {
         return "Calling " + number;
-    }
-
-    public Calculator getCalc() {
-        return calc;
     }
 
     public String getManufacturer() {
