@@ -1,7 +1,8 @@
 package telenchenkosergey.homework.homework3.pair;
 
 public class Pair {
-    private int a, b;
+    private int a;
+    private int b;
 
     public int max() {
         return Math.max(getA(), getB());
