@@ -1,14 +1,9 @@
 package telenchenkosergey.homework.homework5.money;
 
-// Класс Деньги для работы с денежными суммами.
-
-// Число должно быть представлено двумя полями:
-// типа long для рублей и типа int - для копеек.
-// Дробная часть (копейки) при выводе на экран должна
-// быть отделена от целой части запятой.
-// Реализовать сложение, вычитание, деление сумм,
-// деление суммы на дробное число, умножение на дробное число и операции
-// сравнения.
+// Класс Деньги для работы с денежными суммами. 
+// Число должно быть представлено двумя полями: типа long для рублей и типа int - для копеек.
+// Дробная часть (копейки) при выводе на экран должна быть отделена от целой части запятой.
+// Реализовать сложение, вычитание, деление сумм, умножение на дробное число и операции сравнения.
 // В функции main проверить эти методы.
 
 public class Money {
@@ -44,11 +39,18 @@ public class Money {
         return new Money(resultRouble, resultCoin);
     }
 
-    // Division
-    public Money divide(Money money) {
-        long result = this.getTotalAmount(getRouble(), getCoin())
-                / money.getTotalAmount(money.getRouble(), money.getCoin());
-                
+    // Sum Division
+    public Money sumDivide(Money money, int divider) {
+        long result = (this.getTotalAmount(getRouble(), getCoin())
+                + money.getTotalAmount(money.getRouble(), money.getCoin())) / divider;
+        long resultRouble = result / 100;
+        int resultCoin = (int) result % 100;
+        return new Money(resultRouble, resultCoin);
+    }
+
+    // Multiply By Fraction
+    public Money multiplyByFraction(Fraction fraction) {
+        long result = this.getTotalAmount(getRouble(), getCoin()) * fraction.getNumerator() / fraction.getDenominator();
         long resultRouble = result / 100;
         int resultCoin = (int) result % 100;
         return new Money(resultRouble, resultCoin);
