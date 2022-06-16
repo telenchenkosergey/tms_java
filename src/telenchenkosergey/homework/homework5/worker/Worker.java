@@ -1,8 +1,8 @@
 package telenchenkosergey.homework.homework5.worker;
 
 public class Worker {
-    private String name;
-    private String surname;
+    private final String name;
+    private final String surname;
     private double rate;
     private int days;
 

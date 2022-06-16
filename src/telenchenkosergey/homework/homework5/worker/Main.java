@@ -7,6 +7,9 @@ public class Main {
         engineer.setDays(24);
         engineer.setRate(12.5);
 
+        System.out.println(engineer.getName());
+        System.out.println(engineer.getSurname());
+
         System.out.println(engineer.getSalary());
         System.out.println(engineer.getDays());
 
