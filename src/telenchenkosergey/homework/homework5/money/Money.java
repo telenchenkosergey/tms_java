@@ -28,6 +28,7 @@ public class Money {
     public Money sum(Money money) {
         long result = this.getTotalAmount(getRouble(), getCoin())
                 + money.getTotalAmount(money.getRouble(), money.getCoin());
+
         long resultRouble = result / 100;
         int resultCoin = (int) result % 100;
         return new Money(resultRouble, resultCoin);
@@ -37,6 +38,7 @@ public class Money {
     public Money subtract(Money money) {
         long result = this.getTotalAmount(getRouble(), getCoin())
                 - money.getTotalAmount(money.getRouble(), money.getCoin());
+
         long resultRouble = result / 100;
         int resultCoin = Math.abs((int) result % 100);
         return new Money(resultRouble, resultCoin);
@@ -46,6 +48,7 @@ public class Money {
     public Money divide(Money money) {
         long result = this.getTotalAmount(getRouble(), getCoin())
                 / money.getTotalAmount(money.getRouble(), money.getCoin());
+                
         long resultRouble = result / 100;
         int resultCoin = (int) result % 100;
         return new Money(resultRouble, resultCoin);
