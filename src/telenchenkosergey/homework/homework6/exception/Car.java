@@ -3,7 +3,7 @@ package telenchenkosergey.homework.homework6.exception;
 import java.io.IOException;
 
 public class Car {
-    private String name;
+    private final String name;
     public int speed;
     public int price;
 
