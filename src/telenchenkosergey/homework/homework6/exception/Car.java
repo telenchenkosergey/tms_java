@@ -1,0 +1,44 @@
+package telenchenkosergey.homework.homework6.exception;
+
+import java.io.IOException;
+
+public class Car {
+    private String name;
+    public int speed;
+    public int price;
+
+    public Car(String name, int speed, int price) {
+        this.name = name;
+        this.speed = speed;
+        this.price = price;
+    }
+
+    public void start() throws IOException {
+        int start = (int)(Math.random() * 20);
+        System.out.println(start);
+        if (start % 2 == 0) {
+            throw new IOException();
+        }
+        System.out.println(getName() + " started successfully!");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+}
