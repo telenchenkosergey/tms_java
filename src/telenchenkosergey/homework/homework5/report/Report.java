@@ -8,14 +8,14 @@ public class Report {
         long midSalary = defineMidSalary(employees);
         long maxSalary = defineMaxSalary(employees);
 
-        result.append("Minimal Salary:\t" + minSalary + "\n");
-        result.append("Mid Salary:\t" + midSalary + "\n");
-        result.append("Max Salary:\t" + maxSalary + "\n");
+        result.append("Minimal Salary:\t").append(minSalary).append("\n");
+        result.append("Mid Salary:\t").append(midSalary).append("\n");
+        result.append("Max Salary:\t").append(maxSalary).append("\n");
 
         return result.toString();
     }
 
-    public static long defineMinSalary(Employee[] employees) {
+    public long defineMinSalary(Employee[] employees) {
         long minSalary = employees[0].getSalary();
         for (Employee employee : employees) {
             if (employee.getSalary() < minSalary) {
@@ -25,7 +25,7 @@ public class Report {
         return minSalary;
     }
 
-    public static long defineMaxSalary(Employee[] employees) {
+    public long defineMaxSalary(Employee[] employees) {
         long maxSalary = employees[0].getSalary();
         for (Employee employee : employees) {
             if (employee.getSalary() > maxSalary) {
@@ -35,7 +35,7 @@ public class Report {
         return maxSalary;
     }
 
-    public static long defineMidSalary(Employee[] employees) {
+    public long defineMidSalary(Employee[] employees) {
         long sum = 0;
         long midSalary;
         for (Employee employee : employees) {
