@@ -12,7 +12,6 @@ public class Task4 {
     public static String charChanger(int initChar, int finalChar, String initString) {
         char init = initString.charAt(initChar);
         char replacement = initString.charAt(finalChar);
-        String result = initString.replace(init, replacement);
-        return result;
+        return initString.replace(init, replacement);
     }
 }

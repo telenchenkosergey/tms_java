@@ -1,4 +1,4 @@
-package telenchenkosergey.homework.homework6.exception;
+package telenchenkosergey.homework.homework6.car;
 
 import java.io.IOException;
 
