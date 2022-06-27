@@ -12,6 +12,7 @@ public class Main {
             } catch (StartException e) {
                 throw new StartException(car.getName() + " couldn't start.");
             }
+            System.out.println(car.getName() + " started successfully!");
         }
     }
 }

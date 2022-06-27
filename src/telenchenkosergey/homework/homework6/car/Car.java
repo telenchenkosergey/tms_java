@@ -13,11 +13,11 @@ public class Car {
 
     public void start() throws StartException {
         int start = (int)(Math.random() * 20);
-//        System.out.println(start);
+        System.out.println(start);
         if (start % 2 == 0) {
             throw new StartException();
         }
-        System.out.println(getName() + " started successfully!");
+
     }
 
     public String getName() {
