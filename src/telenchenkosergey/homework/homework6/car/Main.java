@@ -9,10 +9,11 @@ public class Main {
         for (Car car : cars) {
             try {
                 car.start();
+                System.out.println(car.getName() + " started successfully!");
             } catch (StartException e) {
-                throw new StartException(car.getName() + " couldn't start.");
+                System.out.println(car.getName() + " couldn't start.");
             }
-            System.out.println(car.getName() + " started successfully!");
+
         }
     }
 }
