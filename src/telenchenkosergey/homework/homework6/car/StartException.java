@@ -1,8 +1,6 @@
 package telenchenkosergey.homework.homework6.car;
 
-import java.io.IOException;
-
-public class StartException extends IOException {
+public class StartException extends RuntimeException {
     public StartException() {
     }
 

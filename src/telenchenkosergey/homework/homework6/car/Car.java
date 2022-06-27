@@ -1,7 +1,5 @@
 package telenchenkosergey.homework.homework6.car;
 
-import java.io.IOException;
-
 public class Car {
     private final String name;
     public int speed;
