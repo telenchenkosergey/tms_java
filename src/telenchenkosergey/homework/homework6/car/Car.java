@@ -13,11 +13,11 @@ public class Car {
         this.price = price;
     }
 
-    public void start() throws IOException {
+    public void start() throws StartException {
         int start = (int)(Math.random() * 20);
         System.out.println(start);
         if (start % 2 == 0) {
-            throw new IOException();
+            throw new StartException(getName() + " couldn't start!");
         }
         System.out.println(getName() + " started successfully!");
     }
