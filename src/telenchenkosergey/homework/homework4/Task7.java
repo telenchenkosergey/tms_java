@@ -22,8 +22,7 @@ public class Task7 {
 
         for (String line : lines) {
             if (line.length() > midLength) {
-                longerStrings.append(line + "\n");
-                longerStrings.append("The line's length: " + line.length() + "\n");
+                longerStrings.append("The line's length: ").append(line.length()).append("\n");
             }
         }
 
