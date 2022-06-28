@@ -2,10 +2,10 @@ package telenchenkosergey.homework.homework6.password;
 
 public class Password {
     public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
-        System.out.println(Password.check("login123Kczlekfa", "123", "123"));
+        System.out.println(Password.check("login123Kczlekfa-", "123-", "123"));
     }
 
-    public static boolean check(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
+    public static boolean check(String login, String password, String confirmPassword) {
         String[] loginArr = login.split("");
         String[] passwordArr = password.split("");
         boolean isOK = true;
@@ -16,7 +16,6 @@ public class Password {
                 }
             }
         } catch (WrongLoginException e) {
-            e.getMessage();
             isOK = false;
         }
 
@@ -27,7 +26,6 @@ public class Password {
                 }
             }
         } catch (WrongPasswordException e) {
-            e.getMessage();
             isOK = false;
         }
 
