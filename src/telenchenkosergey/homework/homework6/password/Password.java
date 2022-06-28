@@ -2,7 +2,7 @@ package telenchenkosergey.homework.homework6.password;
 
 public class Password {
     public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
-        System.out.println(Password.check("login123Kczlekfa", "123", "123"));
+        System.out.println(Password.check("login123Kczlekfa-", "123-", "123"));
     }
 
     public static boolean check(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {

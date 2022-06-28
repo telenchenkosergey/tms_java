@@ -1,13 +1,19 @@
 package telenchenkosergey.homework.homework6.car;
 
-import java.io.IOException;
-
 public class Main {
-    public static void main(String[] args) throws IOException {
-        Car toyota = new Car("Toyota Auris", 200, 5000);
-        Car mazda = new Car("Mazda 6", 220, 6000);
+    public static void main(String[] args) {
+        Car[] cars = {
+                new Car("Toyota Auris", 200, 5000),
+                new Car("Mazda 6", 220, 6000)
+        };
+        for (Car car : cars) {
+            try {
+                car.start();
+                System.out.println(car.getName() + " started successfully!");
+            } catch (StartException e) {
+                System.out.println(car.getName() + " couldn't start.");
+            }
 
-        toyota.start();
-        mazda.start();
+        }
     }
 }

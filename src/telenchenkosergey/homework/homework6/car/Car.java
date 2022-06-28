@@ -1,7 +1,5 @@
 package telenchenkosergey.homework.homework6.car;
 
-import java.io.IOException;
-
 public class Car {
     private final String name;
     public int speed;
@@ -13,13 +11,13 @@ public class Car {
         this.price = price;
     }
 
-    public void start() throws IOException {
+    public void start() throws StartException {
         int start = (int)(Math.random() * 20);
         System.out.println(start);
         if (start % 2 == 0) {
-            throw new IOException();
+            throw new StartException();
         }
-        System.out.println(getName() + " started successfully!");
+
     }
 
     public String getName() {
