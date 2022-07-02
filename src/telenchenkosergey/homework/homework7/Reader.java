@@ -2,6 +2,7 @@ package telenchenkosergey.homework.homework7;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Reader {
     private final String fullName;
@@ -28,18 +29,19 @@ public class Reader {
         System.out.println(builder);
     }
 
-    public void returnBook(Book... books) {
-        ArrayList<Book> returnedBooks = new ArrayList<>();
-        Collections.addAll(returnedBooks, books);
+    public void returnBook(Book book) {
         StringBuilder builder = new StringBuilder();
         builder.append(this.getFullName()).append(" returned books: ");
-        for (Book returnedBook : returnedBooks) {
-            builder.append(returnedBook).append(", ");
-            this.rentedBooks.remove(returnedBook);
-        }
+        builder.append(book).append(", ");
+        this.rentedBooks.remove(book);
         builder.deleteCharAt(builder.length() - 2);
         System.out.println(builder);
+    }
 
+    public void returnBook(List<Book> books) {
+        for (Book book : books) {
+            returnBook(book);
+        }
     }
 
     public String getFullName() {
