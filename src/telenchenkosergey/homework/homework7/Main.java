@@ -14,12 +14,17 @@ public class Main {
         returnedBooks.add(king);
         returnedBooks.add(schildt);
 
-        Reader reader = new Reader("Sergey Telenchenko");
+        ArrayList<Reader> readers = new ArrayList<>();
 
-        reader.takeBook(king, orwell, schildt, galata, bayliss);
-        reader.returnBook(orwell);
-        reader.returnBook(returnedBooks);
+        readers.add(new Reader("Sergey Telenchenko"));
+        readers.add(new Reader("Roger Smith"));
+        readers.add(new Reader("General Zhmyshenko"));
 
-        System.out.println(reader.rentedBooks);
+        readers.get(0).takeBook(king, orwell, schildt, galata, bayliss);
+        readers.get(0).returnBook(orwell);
+        readers.get(0).returnBook(returnedBooks);
+
+        readers.get(1).takeBook(schildt, galata);
+        readers.get(1).returnBook(galata);
     }
 }
