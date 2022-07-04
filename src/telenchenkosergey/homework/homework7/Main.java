@@ -23,11 +23,14 @@ public class Main {
         readers.add(new Reader("Roger Smith"));
         readers.add(new Reader("General Zhmyshenko"));
 
-        readers.get(0).takeBook(king, orwell, schildt, galata, bayliss);
-        readers.get(0).returnBook(orwell);
-        readers.get(0).returnBook(returnedBooks);
+        Reader sergey = readers.get(0);
+        Reader roger = readers.get(1);
 
-        readers.get(1).takeBook(schildt, galata);
-        readers.get(1).returnBook(galata);
+        sergey.takeBook(king, orwell, schildt, galata, bayliss);
+        sergey.returnBook(orwell);
+        sergey.returnBook(returnedBooks);
+
+        roger.takeBook(schildt, galata);
+        roger.returnBook(galata);
     }
 }

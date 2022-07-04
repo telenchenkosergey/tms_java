@@ -7,8 +7,8 @@ package telenchenkosergey.homework.homework5.money;
 // В функции main проверить эти методы.
 
 public class Money {
-    private long rouble;
-    private int coin;
+    private final long rouble;
+    private final int coin;
 
     public Money(long rouble, int coin) {
         this.rouble = rouble;
@@ -69,7 +69,7 @@ public class Money {
         } else {
             builder.append(" is equal to ");
         }
-        builder.append(money.toString());
+        builder.append(money);
         return builder.toString();
     }
 
@@ -92,8 +92,7 @@ public class Money {
         }
 
         builder.append(this.getCoin());
-        String result = builder.toString();
-        return result;
+        return builder.toString();
     }
 
 }

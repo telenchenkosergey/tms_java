@@ -1,8 +1,8 @@
 package telenchenkosergey.homework.homework5.money;
 
 public class Fraction {
-    private int numerator;
-    private int denominator;
+    private final int numerator;
+    private final int denominator;
 
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
@@ -23,8 +23,7 @@ public class Fraction {
         builder.append(this.getNumerator());
         builder.append("/");
         builder.append(this.getDenominator());
-        String result = builder.toString();
-        return result;
+        return builder.toString();
     }
 
 }
