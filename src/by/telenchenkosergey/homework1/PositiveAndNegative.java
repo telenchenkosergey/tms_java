@@ -1,4 +1,4 @@
-package by.telenchenkosergey;
+package by.telenchenkosergey.homework1;
 
 import java.util.Scanner;
 

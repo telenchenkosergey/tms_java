@@ -1,4 +1,4 @@
-package by.telenchenkosergey;
+package by.telenchenkosergey.homework1;
 
 public class HowManyProgrammers {
     public static void main(String[] args) {
