@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class PositiveAndNegative {
     public static void main(String[] args) {
-        int arraySize = 3;
-        int[] numbers = new int[arraySize];
-        fillAnArray(numbers, arraySize);
+        int[] numbers = new int[3];
+        fillAnArray(numbers);
         analyzeAnArray(numbers);
     }
 
-    public static void fillAnArray(int[] numbers, int arraySize) {
-        for (int i = 0; i < arraySize; i++) {
+    public static void fillAnArray(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.printf("Введите число %d:\n", i + 1);
             Scanner input = new Scanner(System.in);
             numbers[i] = input.nextInt();
