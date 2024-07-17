@@ -1,8 +1,12 @@
 package by.telenchenkosergey.homework1;
 
+import java.util.Scanner;
+
 public class HowManyProgrammers {
     public static void main(String[] args) {
-        int programmers = 112;
+        System.out.println("Введите количество:");
+        Scanner input = new Scanner(System.in);
+        int programmers = input.nextInt();
         System.out.printf("%d программист%s\n", programmers, howMany(programmers, "", "а", "ов"));
     }
 
