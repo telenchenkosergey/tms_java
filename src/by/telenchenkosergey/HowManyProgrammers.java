@@ -2,8 +2,8 @@ package by.telenchenkosergey;
 
 public class HowManyProgrammers {
     public static void main(String[] args) {
-        int programmers = 0;
-        System.out.println(programmers + " программист" + howMany(programmers, "", "а", "ов"));
+        int programmers = 112;
+        System.out.printf("%d программист%s\n", programmers, howMany(programmers, "", "а", "ов"));
     }
 
     public static String howMany(int count, String one, String few, String many) {

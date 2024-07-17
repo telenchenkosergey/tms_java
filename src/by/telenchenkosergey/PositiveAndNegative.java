@@ -12,7 +12,7 @@ public class PositiveAndNegative {
 
     public static void fillAnArray(int[] numbers, int arraySize) {
         for (int i = 0; i < arraySize; i++) {
-            System.out.println("Введите число " + (i + 1) + ":");
+            System.out.printf("Введите число %d:\n", i + 1);
             Scanner input = new Scanner(System.in);
             numbers[i] = input.nextInt();
         }
@@ -28,7 +28,7 @@ public class PositiveAndNegative {
                 negative++;
             }
         }
-        System.out.println("Количество положительных: " + positive);
-        System.out.println("Количество отрицательных: " + negative);
+        System.out.printf("Количество положительных: %d\n", positive);
+        System.out.printf("Количество отрицательных: %d\n", negative);
     }
 }
